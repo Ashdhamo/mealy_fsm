@@ -1,7 +1,7 @@
 module mealy (
   input clk, rst_n, x,
   output reg z
- );
+);
 
   parameter A = 3'b001;
   parameter B = 3'b010;
@@ -65,12 +65,12 @@ module mealy (
       end
       else begin
         ns = E; // else E
+        z = 1'b1;
       end
     end
 
     E: begin
             ns = E; // Forever stay in state E
-            z = 1'b0;
         end
 
     F: begin
