@@ -49,7 +49,7 @@ module mealy (
 
     C: begin
       if (x == 1'b0) begin
-        ns = F; // if 0 goes to F
+        ns = G; // if 0 goes to F
         z = 1'b0;
       end
       else begin
